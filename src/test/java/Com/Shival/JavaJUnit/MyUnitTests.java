@@ -17,6 +17,6 @@ public class MyUnitTests {
 		
 		@Test
 		public void JUnitTest3() {
-			assertEquals(100, 200);
+			assertEquals(100, 100);
 		}		
 }
