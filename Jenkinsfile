@@ -7,7 +7,7 @@ pipeline {
     	}
 	
 	triggers {
-		# every fifteen minutes (perhaps at :07, :22, :37, :52)
+		/* every fifteen minutes (perhaps at :07, :22, :37, :52) */
   		cron 'H/15 * * * *'
   		pollSCM ''
 	}	
