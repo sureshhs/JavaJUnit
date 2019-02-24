@@ -17,4 +17,19 @@ pipeline {
 					}
 			}		
 	}
+	
+	post {
+		sucess {
+			mail to "sureshhs@hotmail.com",
+			subject :"${currentBuild.FullDisplayName} Maven build succeeded"	
+		}
+		unstable {
+			mail to "sureshhs@hotmail.com",
+			subject :"${currentBuild.FullDisplayName} Maven build is unstable"	
+		}
+		failure {
+			mail to "sureshhs@hotmail.com",
+			subject :"${currentBuild.FullDisplayName} Maven build failed"	
+		}	
+	}
 }				
