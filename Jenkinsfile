@@ -3,6 +3,7 @@ pipeline {
 	
 	    tools {
         		maven 'MyMaven' 
+		    	jdk 'JDK'
     		}
 	stages {
 			stage ('Compile stage') {
