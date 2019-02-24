@@ -17,7 +17,7 @@ pipeline {
 					}
 			}		
 	}
-	
+	/*
 	post {
 		success {
 			mail to: "sureshhs@hotmail.com",
@@ -35,4 +35,5 @@ pipeline {
 			body: "This email from Jenkins pipeline"
 		}	
 	}
+	*/
 }				
