@@ -23,7 +23,12 @@ pipeline {
 					steps {
 						bat 'mvn test'
 					}
-			}		
+			}	
+			stage ('Deploy stage') {
+					steps {
+						bat 'mvn deploy'
+					}
+			}
 	}
 	
 	post {
