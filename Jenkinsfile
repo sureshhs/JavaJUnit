@@ -21,15 +21,18 @@ pipeline {
 	post {
 		success {
 			mail to: "sureshhs@hotmail.com",
-			subject: "${currentBuild.FullDisplayName} Maven build succeeded"	
+			subject: "${currentBuild.FullDisplayName} Maven build succeeded",
+			body: "This email from Jenkins pipeline"		
 		}
 		unstable {
 			mail to: "sureshhs@hotmail.com",
-			subject: "${currentBuild.FullDisplayName} Maven build is unstable"	
+			subject: "${currentBuild.FullDisplayName} Maven build is unstable",
+			body: "This email from Jenkins pipeline"	
 		}
 		failure {
 			mail to: "sureshhs@hotmail.com",
-			subject: "${currentBuild.FullDisplayName} Maven build failed"	
+			subject: "${currentBuild.FullDisplayName} Maven build failed",
+			body: "This email from Jenkins pipeline"
 		}	
 	}
 }				
