@@ -19,7 +19,7 @@ pipeline {
 	}
 	
 	post {
-		sucess {
+		success {
 			mail to: "sureshhs@hotmail.com",
 			subject: "${currentBuild.FullDisplayName} Maven build succeeded"	
 		}
