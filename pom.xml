@@ -29,6 +29,10 @@
 	             <artifactId>maven-surefire-plugin</artifactId>
 	             <version>2.22.0</version>
 		     <configuration>
+			/* To run tests in parallel
+			 <parallel> all </parallel>   
+			 <threadCount> 10 </threadCount>
+			 */    
 		       	<reportsDirectory>${project.build.directory}/reports</reportsDirectory>
 		     </configuration>			 
 	         </plugin>	
